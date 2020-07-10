@@ -10,7 +10,7 @@ gem "rb-readline"
 gem "rest-client", ">= 1.8.0"
 gem "delayed_job_active_record"
 
-gem "grape", "=0.19.1"
+gem "grape", "1.1.0"
 gem "grape-roar"
 gem "grape-entity"
 gem "grape-swagger"
