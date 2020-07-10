@@ -1,0 +1,61 @@
+require:
+  - ./spec/linters/migrations/migration_linting.rb
+  - rubocop-rails
+
+AllCops:
+  TargetRubyVersion: 2.4
+  DisabledByDefault: true
+  CacheRootDirectory: "./.rubocop-cache"
+
+Migration/AddIndexMustUseConcurrently:
+  Enabled: true
+Migration/MustDisableDdlTransaction:
+  Enabled: true
+Migration/AddReferenceCantUseIndex:
+  Enabled: true
+Lint/Syntax:
+  Enabled: true
+Rails/Output:
+  Enabled: true
+
+Style/StringLiterals:
+  Enabled: false
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+Style/FrozenStringLiteralComment:
+  Enabled: false
+Style/Documentation:
+  Enabled: false
+Style/HashSyntax:
+  Enabled: false
+Style/SymbolArray:
+  Enabled: false
+Style/AndOr:
+  Enabled: false
+Style/NegatedIf:
+  Enabled: false
+Style/Not:
+  Enabled: false
+Style/GuardClause:
+  Enabled: false
+Style/IfUnlessModifier:
+  Enabled: false
+Style/NumericPredicate:
+  Enabled: false
+Style/RedundantSelf:
+  Enabled: false
+
+Metrics/MethodLength:
+  Enabled: false
+Metrics/LineLength:
+  Enabled: false
+Metrics/ClassLength:
+  Enabled: false
+Metrics/PerceivedComplexity:
+  Enabled: false
+Metrics/CyclomaticComplexity:
+  Enabled: false
+Metrics/AbcSize:
+  Enabled: false
+Metrics/BlockNesting:
+  Enabled: false

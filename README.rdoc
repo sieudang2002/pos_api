@@ -1,0 +1,2 @@
+# URL for test
+/api/v1/tickets/run_test?time=50

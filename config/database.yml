@@ -1,0 +1,23 @@
+# SQLite version 3.x
+#   gem install sqlite3
+#
+#   Ensure the SQLite 3 gem is defined in your Gemfile
+#   gem 'sqlite3'
+#
+default: &default
+  adapter: postgresql
+  # statement_limit means number of prepared statements to cache per connection
+  # See this article for more info https://devcenter.heroku.com/articles/postgres-logs-errors#out-of-memory-errors
+  statement_limit: 200
+  encoding: unicode
+  # For details on connection pooling, see rails configuration guide
+  # http://guides.rubyonrails.org/configuring.html#database-pooling
+  pool: 5
+
+development:
+  <<: *default
+  database: my_pos_api_dev
+
+test:
+  <<: *default
+  database: my_pos_api_test
